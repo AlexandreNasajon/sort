@@ -1,18 +1,12 @@
-a = {5,3,7,2}
+a = {5,7,6,3,4}
 
 sort = function(t)
-  b = {}
-  i = 1
-  j = 1
-  b[i] = t[j]
-  while #b > #a do
-    if b[i] > t[j] then
-      b[i] = t[j]
-      j = j+1
-    elseif b[i] < t[j] then
-      i = i+1
-     elseif b[i] == t[j] then
-      j = j+1
-    end
+  for k,v in pairs(t) do
+      if k > k+1 and v < v+1 then
+      v = v+1
   end
 end
+  
+b = sort(a)
+  
+print(b)
