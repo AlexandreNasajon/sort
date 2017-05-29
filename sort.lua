@@ -5,10 +5,14 @@ sort = function(t)
   i = 1
   h = 1
   b[i] = t[j]
-  if b[i] > t[j] then
-    b[i] = t[j]
-    j = j+1
-  else
-    
+  while #b > #a do
+    if b[i] > t[j] then
+      b[i] = t[j]
+      j = j+1
+    elseif b[i] < t[j] then
+      i = i+1
+     elseif b[i] == t[j] then
+      j = j+1
+    end
   end
 end
