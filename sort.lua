@@ -11,7 +11,7 @@ sort = function(table,new)
 
         for j = 1 , #new do
 
-            if new[i] > new[j] then
+            if new[i] < new[j] then
                 new[i] , new[j] = new[j] , new[i]
             end
         end
