@@ -1,11 +1,6 @@
 t = { 3 , 2 , 1 , 2 , 5 , 8 , 10}
-n = {}
 
-sort = function(table,new)
-
-    for k , v in pairs(table) do
-        new[k] = table[k]
-    end
+sort = function(new)
 
     for i = 1 , #new do
 
@@ -18,6 +13,6 @@ sort = function(table,new)
     end
 end
 
-sort(t,n)
+sort(t)
 
-for i = 1 , #n do print(n[i]) end
+for i = 1 , #t do print(t[i]) end
